@@ -38,6 +38,7 @@ const rules = {
 const open = async (row) => {
     dialogVisible.value = true
     formModel.value ={ ...row } // 添加 => 重置了表单数据 编辑  => 存储了需要回显的数据
+    
 }
 
 const onSubmit = async () => {

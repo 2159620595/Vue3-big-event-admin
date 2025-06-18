@@ -16,3 +16,15 @@ export const artDelChannelService = (id) =>
 // 文章:获取文章列表
 export const artGetListService = (params) =>
   request.get("/my/article/list", { params })
+
+// 文章: 发布-文章
+export const artPublishService = (data) => request.post("/my/article/add", data)
+
+// 文章: 获取文章详情
+export const artGetDatailService = id => request.get('/my/article/info', {params: { id }})
+
+// 文章： 编辑文章
+export const artEditService = data => request.put('/my/article/info', data) 
+
+// 文章： 删除文章
+export const artDelService = id => request.delete('/my/article/info', { params: { id } })

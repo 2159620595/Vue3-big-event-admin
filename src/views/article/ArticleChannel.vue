@@ -6,18 +6,18 @@ import {Edit ,Delete} from '@element-plus/icons-vue'
 const channelList = ref([])
 const formRef = ref()
 // 加载动画
-const isLoading = ref(false)
+// const isLoading = ref(false)
 // 声明弹层
 const dialog = ref()
 // 渲染页面数据
 const getChannelList = async () => {
     // 请求数据开启isLoading
-    isLoading.value = true
+    // isLoading.value = true
     const res = await artGetChannelService()
     // 存放数据
     channelList.value = res.data.data
     // 请求数据完毕关闭isLoading
-    isLoading.value = false
+    // isLoading.value = false
 }
 // 调用函数渲染页面
 getChannelList()
